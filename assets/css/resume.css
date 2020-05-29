@@ -1,0 +1,22 @@
+#resume-body {
+    text-align: center;
+}
+#resume-body p {
+    text-align: center;
+}
+#resume-body ul {
+    text-align: left;
+}
+
+.resume-bold {
+    font-weight: 900;
+}
+.skills-container {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills {
+    margin: 2%;
+}
+

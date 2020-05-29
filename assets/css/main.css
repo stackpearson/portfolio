@@ -2291,6 +2291,9 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
+		#phoneNumber, #emailAddy {
+			display:none;
+		}
 
 		#nav > ul {
 			line-height: 0px;
@@ -2404,6 +2407,16 @@ input, select, textarea {
 				border-left: solid 0.75em rgba(64, 64, 64, 0);
 				border-right: solid 0.75em rgba(64, 64, 64, 0);
 			}
+
+		.nav-contacts {
+			text-align: right;
+			margin-right: 5%;
+		}
+		
+		.nav-contacts a {
+			padding: 0% 1.5%;
+		}
+	
 
 /* Banner */
 
