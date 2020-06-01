@@ -231,6 +231,15 @@ input, select, textarea {
 		justify-content: center;
 	}
 
+	.skills-container {
+		display:flex;
+		flex-wrap: wrap;
+	}
+
+	.skills-container ul {
+		margin: 15px;
+	}
+
 
 
 /* Container */
