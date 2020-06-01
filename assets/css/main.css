@@ -379,6 +379,14 @@ input, select, textarea {
 			width: 66.66667%;
 		}
 
+		.col-8 p {
+			text-align: left;
+		}
+
+		.col-8 h4 {
+			text-align: center; 
+		}
+
 		.row > .off-8 {
 			margin-left: 66.66667%;
 		}
@@ -2061,6 +2069,7 @@ input, select, textarea {
 		border-radius: 0.5em;
 		text-decoration: none;
 		padding: 0.65em 3em 0.65em 3em;
+		margin: .65em;
 		border: 0;
 		cursor: pointer;
 		outline: 0;
@@ -2291,7 +2300,7 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
-		#phoneNumber, #emailAddy {
+		#phoneNumber, #emailAddy, #phoneNumber2, #emailAddy2 {
 			display:none;
 		}
 
@@ -2414,6 +2423,10 @@ input, select, textarea {
 		}
 		
 		.nav-contacts a {
+			padding: 0% 1.5%;
+		}
+
+		.nav-contacts-bot a {
 			padding: 0% 1.5%;
 		}
 	
