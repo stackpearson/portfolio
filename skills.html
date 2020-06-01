@@ -13,6 +13,29 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="left-sidebar is-preload">
+		<div class="contact-form" id="contact-form">
+			<form
+			action="https://formspree.io/mbjzojdd"
+			method="POST">
+				<label>
+					Your Contact Information:
+					<input type="text" name="_replyto">
+				</label>
+				<label>
+					Message:
+					<textarea name="message"></textarea>
+				</label>
+				<div class="form-buttons">
+					<div>
+						<button id='sendContactForm' type="submit">Send</button>
+					</div>
+					<div>
+						<button id='closeForm' type="button" onclick="closeContactForm()" type="submit">Close</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -29,7 +52,7 @@
 						<nav id="nav">
 							<div class="nav-contacts">
 								<a class="fas fa-phone" id="phoneIcon"> <span id="phoneNumber">208-284-2019</span></a>
-								<a class="fas fa-envelope-square" id="emailIcon"> <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>	
+								<a class="fas fa-envelope-square" id="emailIcon" onclick="openContactForm()"> <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>	
 								<a href="https://github.com/stackpearson" class="fas icon brands fa-github"></a>
 								<a href="https://www.linkedin.com/in/sawyer-pearson/" class="fas icon brands fa-linkedin-in"></a>					
 							</div>

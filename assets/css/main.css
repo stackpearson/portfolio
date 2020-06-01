@@ -226,6 +226,13 @@ input, select, textarea {
 		font-size: 0.8em;
 	}
 
+	.form-buttons {
+		display:flex;
+		justify-content: center;
+	}
+
+
+
 /* Container */
 
 	.container {
@@ -1947,6 +1954,10 @@ input, select, textarea {
 				}
 
 /* Form */
+	form {
+		padding: 1em;
+		z-index: 0;
+	}
 
 	form label {
 		display: block;
@@ -2012,6 +2023,19 @@ input, select, textarea {
 
 	form ::-moz-focus-inner {
 		border: 0;
+	}
+
+	#closeForm {
+		display:inline-block;
+		margin-left: 95%;
+	}
+
+	#contact-form {
+		display:none;
+		border: 1px solid black;
+		border-radius: 10px;
+		padding: 5px;
+		margin: 10px;
 	}
 
 /* Table */

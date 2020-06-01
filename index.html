@@ -14,6 +14,29 @@
 	</head>
 	
 	<body class="homepage is-preload">
+		<div class="contact-form" id="contact-form">
+			<form
+			action="https://formspree.io/mbjzojdd"
+			method="POST">
+				<label>
+					Your Contact Information:
+					<input type="text" name="_replyto">
+				</label>
+				<label>
+					Message:
+					<textarea name="message"></textarea>
+				</label>
+				<div class="form-buttons">
+					<div>
+						<button id='sendContactForm' type="submit">Send</button>
+					</div>
+					<div>
+						<button id='closeForm' type="button" onclick="closeContactForm()" type="submit">Close</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
 			
 		<div id="page-wrapper">
 			
@@ -23,6 +46,7 @@
 					
 
 					<!-- Inner -->
+			
 						<div class="inner">
 							<header>
 								<h1><a href="index.html" id="logo">Sawyer Pearson</a></h1>
@@ -42,7 +66,7 @@
 											
 							<div class="nav-contacts">
 								<a class="fas fa-phone" id="phoneIcon"> <span id="phoneNumber">208-284-2019</span></a>
-								<a class="fas fa-envelope-square" id="emailIcon"> <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>		
+								<a class="fas fa-envelope-square" onclick="openContactForm()" id="emailIcon"> <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>		
 							</div>
 							
 							<ul>
@@ -164,22 +188,7 @@
 						<p>
 							Will add data about what the featured product taught me, what was challenging, what was easy and what I enjoyed.
 						</p> -->
-						<div class="contact-form" id="contact-form">
-							<form
-							action="https://formspree.io/mbjzojdd"
-							method="POST"
-							>
-								<label>
-									Your Contact Information:
-									<input type="text" name="_replyto">
-								</label>
-								<label>
-									Message:
-									<textarea name="message"></textarea>
-								</label>
-								<button type="submit">Send</button>
-							</form>
-						</div>
+					
 						
 						
 					</article>
@@ -196,7 +205,7 @@
 								<!-- Contact -->
 								<section class="contact">
 									<footer>
-										<a href="#" onclick="openContactForm()" class="button"><h3>Contact Me</h3></a>
+										<a href="#" id="contactMe" onclick="openContactForm()" class="button"><h3>Contact Me</h3></a>
 									</footer>
 									<div class="nav-contacts-bot">
 										<a class="fas fa-phone" id="phoneIcon2"> <span id="phoneNumber2">208-284-2019</span></a>

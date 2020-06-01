@@ -14,6 +14,29 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="right-sidebar is-preload">
+		<div class="contact-form" id="contact-form">
+			<form
+			action="https://formspree.io/mbjzojdd"
+			method="POST">
+				<label>
+					Your Contact Information:
+					<input type="text" name="_replyto">
+				</label>
+				<label>
+					Message:
+					<textarea name="message"></textarea>
+				</label>
+				<div class="form-buttons">
+					<div>
+						<button id='sendContactForm' type="submit">Send</button>
+					</div>
+					<div>
+						<button id='closeForm' type="button" onclick="closeContactForm()" type="submit">Close</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -22,7 +45,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">My Resume - download icon</a></h1>
+								<h1><a href="index.html" id="logo">Sawyer Pearson</a></h1>
 							</header>
 						</div>
 
@@ -30,7 +53,7 @@
 						<nav id="nav">
 							<div class="nav-contacts">
 								<a class="fas fa-phone" id="phoneIcon"> <span id="phoneNumber">208-284-2019</span></a>
-								<a class="fas fa-envelope-square" id="emailIcon"> <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>	
+								<a class="fas fa-envelope-square" id="emailIcon" onclick="openContactForm()" > <span id="emailAddy">sawyer.pearson208@gmail.com</span></a>	
 								<a href="https://github.com/stackpearson" class="fas icon brands fa-github"></a>
 								<a href="https://www.linkedin.com/in/sawyer-pearson/" class="fas icon brands fa-linkedin-in"></a>					
 							</div>
@@ -60,7 +83,6 @@
 
 					<article id="main" class="container special">
 						<header>
-							<h2>Sawyer Pearson</h2>
 							<p>Boise, ID 83713 | sawyer.pearson208@gmail.com | <a href="https://www.linkedin.com/in/sawyer-pearson/">linkedin.com/in/sawyer-pearson</a></a></p>
 						</header>
 						<section id="resume-body">
@@ -117,7 +139,8 @@
 					
 
 						<footer>
-							<a href="#" class="button">Continue Reading</a>
+							<a href="assets/Downloadable/sawyer_pearson_web_developer_resume.pdf" download='sawyer_pearson_web_developer_resume' class="button">Download</a>
+							
 						</footer>
 					</article>
 
@@ -127,28 +150,37 @@
 		
 
 			<!-- Footer -->
-				<div id="footer">
+			<div id="footer">
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-12">
 
-				<!-- Contact -->
-					<section class="contact">
-						<header>
-							<h3>Let's get in touch</h3>
-						</header>
-						<div class="nav-contacts-bot">
-							<a class="fas fa-phone" id="phoneIcon2"> <span id="phoneNumber2">208-284-2019</span></a>
-							<a class="fas fa-envelope-square" id="emailIcon2"> <span id="emailAddy2">sawyer.pearson208@gmail.com</span></a>	
-							<a href="https://github.com/stackpearson" class="fas icon brands fa-github"></a>
-							<a href="https://www.linkedin.com/in/sawyer-pearson/" class="fas icon brands fa-linkedin-in"></a>					
+							<!-- Contact -->
+							<section class="contact">
+								<footer>
+									<a href="#" id="contactMe" onclick="openContactForm()" class="button"><h3>Contact Me</h3></a>
+								</footer>
+								<div class="nav-contacts-bot">
+									<a class="fas fa-phone" id="phoneIcon2"> <span id="phoneNumber2">208-284-2019</span></a>
+									<a class="fas fa-envelope-square" id="emailIcon2"> <span id="emailAddy2">sawyer.pearson208@gmail.com</span></a>	
+									<a href="https://github.com/stackpearson" class="fas icon brands fa-github"></a>
+									<a href="https://www.linkedin.com/in/sawyer-pearson/" class="fas icon brands fa-linkedin-in"></a>					
+								</div>
+							</section>
+
+							<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; Pearson Web Dev 2020, All rights reserved.</li><li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+
 						</div>
-					</section>
 
-				<!-- Copyright -->
-					<div class="copyright">
-						<ul class="menu">
-							<li>&copy; Pearson Web Dev 2020, All rights reserved.</li><li>Initial Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
 					</div>
 				</div>
+			</div>
 
 		</div>
 

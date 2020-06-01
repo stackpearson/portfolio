@@ -1,3 +1,5 @@
+//----------------Phone & email functionality------------------//
+
 const phoneIcon = document.getElementById('phoneIcon');
 const phoneIcon2 = document.getElementById('phoneIcon2');
     phoneIcon.addEventListener('mouseenter', showPhone)
@@ -41,9 +43,18 @@ function jumpHomeToProjects() {
     window.location = "index.html#jump_to_projects";
 }
 
+//---------------------------------------------------------------//
+//----------------contact form functionality--------------------//
 
-function jumpToHome() {
-    let projectLanding = document.getElementById('page-wrapper')
-     projectLanding.scrollIntoView();
- }
+let contactForm = document.getElementById('contact-form'); 
 
+function openContactForm() {
+     
+    contactForm.style.display="block"
+    contactForm.scrollIntoView();
+}
+
+function closeContactForm() {
+    // const contactForm = document.getElementById('close-form');
+    contactForm.style.display="none";
+}
