@@ -49,12 +49,9 @@ function jumpHomeToProjects() {
 let contactForm = document.getElementById('contact-form'); 
 
 function openContactForm() {
-     
     contactForm.style.display="block"
-    contactForm.scrollIntoView();
 }
 
 function closeContactForm() {
-    // const contactForm = document.getElementById('close-form');
     contactForm.style.display="none";
 }
