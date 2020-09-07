@@ -155,3 +155,21 @@ h2.f4.text-normal.mb-3 {
     border: 5px solid transparent;
     border-top-color: rgba(0,0,0,.85)
 }
+
+@media screen and (max-width: 840px) {
+    .calendar {
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .calendar {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .calendar {
+        max-width: 350px;
+    }
+}
