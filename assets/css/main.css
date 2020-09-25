@@ -233,11 +233,15 @@ input, select, textarea {
 
 	.skills-container {
 		display:flex;
-		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.skills-container ul {
 		margin: 15px;
+	}
+
+	.skills-header {
+		text-align: center;
 	}
 
 
@@ -361,6 +365,11 @@ input, select, textarea {
 
 		.row > .col-4 {
 			width: 33.33333%;
+			justify-content: center;
+		}
+
+		.react {
+			margin-top: 20px;
 		}
 
 		.row > .off-4 {
@@ -1527,7 +1536,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: center;
 			}
 
 				.row > * {
@@ -3165,6 +3174,7 @@ input, select, textarea {
 				display: block;
 			}
 
+
 		/* Main */
 
 			#main > header {
@@ -3198,4 +3208,9 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
+	}
+
+	.skills-img {
+		height: 75px;
+		width: px;
 	}
