@@ -3209,3 +3209,8 @@ input, select, textarea {
 		height: 75px;
 		width: px;
 	}
+
+	.project-img {
+		width: 288px;
+		height: 250px;
+	}
