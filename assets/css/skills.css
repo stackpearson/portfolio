@@ -1,0 +1,9 @@
+.skills-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acclaim-badge {
+    margin: 10px;
+}
